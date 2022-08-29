@@ -535,6 +535,10 @@ main .container .right{
   border-radius: 50%;
 
 }
+.custom-theme .card h2{
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
 .custom-theme .choose-color span:nth-child(1){
   background: hsl(252,75%, 60%);
 }
