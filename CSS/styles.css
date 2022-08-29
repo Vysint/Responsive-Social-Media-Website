@@ -480,10 +480,12 @@ main .container .right{
   padding-inline-start: 3rem;
   border-radius: var(--card-border-radius);
   width: 50%;
+  box-shadow: 0 0 1rem var(--color-primary);
 }
 /* --------------FONT SIZES-------- */
 .custom-theme .font-size{
   margin-top: 5rem;
+  margin-right: 2rem;
 }
 .custom-theme .font-size > div{
   display: flex;
@@ -497,7 +499,7 @@ main .container .right{
   background: var(--color-secondary);
   height: 0.3rem;
   width: 100%;
-  margin: 0 1rem;
+  margin:0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -517,6 +519,7 @@ main .container .right{
 /* ---------------- FONT COLORS------------- */
 .custom-theme .color{
   margin-top: 1rem;
+  margin-right: 2rem;
 }
 .custom-theme .choose-color{
   background: var(--color-light);
@@ -560,6 +563,8 @@ main .container .right{
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
 }
 .custom-theme .choose-bg > div{
   padding: var(--card-padding);
@@ -617,6 +622,9 @@ main .container .right{
   .left .btn{
     display: none;
   }
+  .custom-theme .card{
+    width: 80vw;
+  }
 }
 /* -------MEDIA QUERIES FOR SMALL TABLETS AND MOBILE PHONES---------- */
 @media screen and (max-width: 992px){
@@ -649,5 +657,8 @@ main .container .right{
   }
   main .container .right{
     display: none;
+  }
+  .custom-theme .card{
+    width: 92vw;
   }
 }
