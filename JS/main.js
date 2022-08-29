@@ -7,6 +7,9 @@ const messages = document.querySelector('.messages');
 const message = messages.querySelectorAll('.message');
 const messageSearch = document.querySelector('#message-search');
 
+//THEME
+const theme = document.querySelector('#theme');
+const themeModal  = document.querySelector('.custom-theme');
 
 // remove active class from all menu items
 const changeActiveItem = () => {
@@ -54,3 +57,18 @@ messagesNotification.addEventListener('click', () => {
     }, 2000)
 })
 
+
+// THEME/DISPLAY CUSTOMIZATION
+//opens the theme modal
+const openThemeModal = () => {
+    themeModal.style.display = "grid";
+}
+// closes model
+const closeThemeModal = (event) => {
+    if(event.target.classList.contains('custom-theme')){
+        themeModal.style.display = 'none';
+    }
+}
+//closing the modal
+themeModal.addEventListener('click', closeThemeModal);
+theme.addEventListener('click', openThemeModal);
